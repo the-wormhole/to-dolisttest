@@ -1,0 +1,25 @@
+body{
+    width: 40%;
+    margin-left: 33%;
+    font-family: sans-serif;
+}
+body > h1, body > p{
+    margin-left: 25%;
+}
+body > form{
+    margin-left: 15%;
+}
+#list ul{
+    list-style: none;
+    padding: 0;
+}
+#list ul li{
+    margin-top: 3px;
+    background-color: lightgrey;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+#list ul li input{
+
+}

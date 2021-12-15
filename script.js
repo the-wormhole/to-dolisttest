@@ -1,7 +1,7 @@
 
 let btn = document.getElementById('btn');
 btn.addEventListener('click',createTask);
-var ctr = 1;
+let ctr = 1;
 function createTask(event){
     event.preventDefault();
     let content = document.getElementById('task');
@@ -20,6 +20,11 @@ function createTask(event){
             //console.log(event.path[1].id);
             let item = document.getElementById(event.path[1].id);
             item.remove();
+            let all = document.querySelectorAll('#list ul li')
+            let count = document.getElementById('ctr');
+            ctr = all.length;
+    
+            count.innerText = ctr;
         }
 
         let ele = document.createElement('input');
